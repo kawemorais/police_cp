@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Central de Policia - RedLine Police</title>
+</head>
+<body>
+    <div class="containerCP">
+        <div class="boxCP">
+            <header class="top-barCP">
+                <img src="/assets/img/Policia_Logo_Editado.png" alt="">
+                <h2>Calculadora de Pena</h2>
+            </header>
+            <form action="" class="formCP">
+                <div class="col">
+                    <p class="pTitle">§ Crimes Patrimoniais</p>
+                    <input type="checkbox" name="lblCrimes" id="furto"><label for="furto" class="lblCheck">Furto</label>
+                    <input type="checkbox" name="lblCrimes" id="roubo"><label for="roubo" class="lblCheck">Roubo</label>
+                    <input type="checkbox" name="lblCrimes" id="rBanco"><label for="rBanco" class="lblCheck">Roubo a banco</label>
+                    <input type="checkbox" name="lblCrimes" id="rCaixa"><label for="rCaixa" class="lblCheck">Roubo a Caixa Eletrônico</label>
+                    <input type="checkbox" name="lblCrimes" id="rLoja"><label for="rLoja" class="lblCheck">Rouba a Lojas</label>
+                    <input type="checkbox" name="lblCrimes" id="rRegis"><label for="rRegis" class="lblCheck">Rouba a Caixa Registradora</label>
+                    <input type="checkbox" name="lblCrimes" id="rVeh"><label for="rVeh" class="lblCheck">Roubo Veiculos</label>
+                    <input type="checkbox" name="lblCrimes" id="desmanche"><label for="desmanche" class="lblCheck">Desmanche</label>
+                    <input type="checkbox" name="lblCrimes" id="receptação"><label for="receptação" class="lblCheck">Receptação</label>   
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p class="pTitle">§ Crimes contra a pessoa</p>
+                    <input type="checkbox" name="lblCrimes" id="agressao"><label for="agressao" class="lblCheck">Agressão</label>
+                    <input type="checkbox" name="lblCrimes" id="difamacao"><label for="difamacao" class="lblCheck">Difamação</label>
+                    <input type="checkbox" name="lblCrimes" id="calunia"><label for="calunia" class="lblCheck">Calunia</label>
+                    <input type="checkbox" name="lblCrimes" id="hCulposo"><label for="hCulposo" class="lblCheck">Homicidio Culposo</label>
+                    <input type="checkbox" name="lblCrimes" id="hDoloso"><label for="hDoloso" class="lblCheck">Homicidio Doloso</label>
+                    <input type="checkbox" name="lblCrimes" id="seqCivil"><label for="seqCivil" class="lblCheck">Sequestro de Civil</label>
+                    <input type="checkbox" name="lblCrimes" id="seqOficial"><label for="seqOficial" class="lblCheck">Sequestro de Oficial</label>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <p class="pTitle">§ Crimes administrativos</p>
+                    <input type="checkbox" name="lblCrimes" id="assCriminosa"><label for="assCriminosa" class="lblCheck">Associação Criminosa</label>
+                    <input type="checkbox" name="lblCrimes" id="desobediencia"><label for="desobediencia" class="lblCheck">Desobediência</label>
+                    <input type="checkbox" name="lblCrimes" id="desacato"><label for="desacato" class="lblCheck">Desacato</label>
+                    <input type="checkbox" name="lblCrimes" id="falsIdeo"><label for="falsIdeo" class="lblCheck">Falsidade Ideologica</label>
+                    <input type="checkbox" name="lblCrimes" id="tentativaSuborno"><label for="tentativaSuborno" class="lblCheck">Tentativa de Suborno</label>
+                    <input type="checkbox" name="lblCrimes" id="fuga"><label for="fuga" class="lblCheck">Fuga</label>
+                    <input type="checkbox" name="lblCrimes" id="obsDJus"><label for="obsDJus" class="lblCheck">Obstrução de Justiça</label>
+                    <input type="checkbox" name="lblCrimes" id="denFalsa"><label for="denFalsa" class="lblCheck">Denuncia Falsa</label>
+                </div>
+
+                <div class="col">
+                    <p class="pTitle">§ Crimes Patrimoniais</p>
+                    <input type="checkbox" name="lblCrimes" id="corrida"><label for="corrida" class="lblCheck">Corrida Ilegal</label>
+                    <input type="checkbox" name="lblCrimes" id="vidroFume"><label for="vidroFume" class="lblCheck">Utilização Vidro Fumê</label>
+                    <input type="checkbox" name="lblCrimes" id="conduPer"><label for="conduPer" class="lblCheck">Condução Perigosa</label>
+                    <input type="checkbox" name="lblCrimes" id="hSpeed"><label for="hSpeed" class="lblCheck">Alta Velocidade</label> 
+                    <br><br><br><br><br><br><br>
+                    <p class="pTitle">§ Crimes contra a pessoa</p>
+                    <input type="checkbox" name="lblCrimes" id="explosivos"><label for="explosivos" class="lblCheck">Carregar/Utilizar Explosivos</label>
+                    <input type="checkbox" name="lblCrimes" id="piaB"><label for="piaB" class="lblCheck">Porte ilegal arma baixo calibre</label>
+                    <input type="checkbox" name="lblCrimes" id="piaA"><label for="piaA" class="lblCheck">Porte ilegal arma alto calibre</label>
+                    <input type="checkbox" name="lblCrimes" id="traficoA"><label for="traficoA" class="lblCheck">Trafico de Armas</label>
+                    <input type="checkbox" name="lblCrimes" id="posseOb"><label for="posseOb" class="lblCheck">Posse de Objetos Ilegais</label>
+                    <input type="checkbox" name="lblCrimes" id="posseSub"><label for="posseSub" class="lblCheck">Posse de Substâncias Ilegais</label>
+
+                    <div class="boxCalculadora">
+                        <p class="cTitle">Calculadora</p>
+                        <input type="checkbox" name="reuPri" id="reuPri"><label for="reuPri" class="lblCheck">Réu Primário</label>
+                        <input type="button" value="CALCULAR PENA" class="btnCalcPena" id="btnCalcPena"> <br><br><br><br><br>
+                        <label for="tempo_pena" class="lblPena">Tempo: </label><p class="pResPena"></p><br><br><br>
+                        <label for="qtdMulta" class="lblPena">Multa: </label><p class="pResMulta"></p>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./index.js"></script>
