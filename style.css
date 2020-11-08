@@ -177,14 +177,14 @@
     transition: 1s;
 }
 
-.col .boxCalculadora .lblPena{
+.col .boxCalculadora .lblPena, .lblFianca{
     color: #ECE1DA;
     margin-left: 4px;
     margin-top: 7px;
     float: left;
 }
 
-.col .boxCalculadora .pResPena, .pResMulta{
+.col .boxCalculadora .pResPena, .pResMulta, .pResFianca{
     color: #EA5455;
     margin-left: 100px;
     font-size: 25px;
