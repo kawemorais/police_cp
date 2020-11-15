@@ -215,6 +215,7 @@ $(".btnCalcPena").click(function(){
     }
     soma = 0
     multas = 0
+    fianca = 0
 })
 
 
