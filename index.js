@@ -154,17 +154,22 @@ let config = {
         multa: 0,
         fianca: 999999
     },
-    traficoA: {
+    traficoA: { // 10.000/un
         tempo: 24,
         multa: 10000,
         fianca: 999999
     },
-    posseOb: {
+    traficoD: { // 1.000/un
+        tempo: 12,
+        multa: 1000,
+        fianca: 999999
+    },
+    posseOb: { // 400/10un
         tempo: 12,
         multa: 400,
         fianca: 25000
     },
-    posseSub: {
+    posseSub: { // 400/10un
         tempo: 7,
         multa: 400,
         fianca: 999999
@@ -196,7 +201,7 @@ $(".btnCalcPena").click(function(){
     for (let j = 0; j < ids.length; j++) {
         const element = ids[j];
         
-        soma = soma + config[element].tempo
+        soma = soma + config[element].tempo 
         multas = multas + config[element].multa
         fiancas = fiancas + config[element].fianca
         if(element == "reuPri"){
@@ -209,6 +214,8 @@ $(".btnCalcPena").click(function(){
         document.querySelector(".pResPena").innerHTML = soma + " anos"
         document.querySelector(".pResMulta").innerHTML = "R$" + multas
         document.querySelector(".pResFianca").innerHTML = "R$" + fiancas
+
+        if (element == "")
         $(".pResPena").show();
         $(".pResMulta").show();
         $(".pResFianca").show(); 
