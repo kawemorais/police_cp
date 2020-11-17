@@ -204,7 +204,6 @@ $(".btnCalcPena").click(function(){
         soma = soma + config[element].tempo 
         multas = multas + config[element].multa
         fiancas = fiancas + config[element].fianca
-        
         if(element == "reuPri"){
             soma = soma / 2
         }
