@@ -211,7 +211,7 @@ $(".btnCalcPena").click(function(){
             fiancas = 0
         }
 
-        document.querySelector(".pResPena").innerHTML = soma + " anos"
+        document.querySelector(".pResPena").innerHTML = soma + " meses"
         document.querySelector(".pResMulta").innerHTML = "R$" + multas
         document.querySelector(".pResFianca").innerHTML = "R$" + fiancas
 
